@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "hello-world": {
+    "router-demo": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/hello-world",
+            "outputPath": "dist/router-demo",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "hello-world:build"
+            "browserTarget": "router-demo:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "hello-world:build:production"
+              "browserTarget": "router-demo:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "hello-world:build"
+            "browserTarget": "router-demo:build"
           }
         },
         "test": {
@@ -110,19 +110,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "hello-world:serve"
+            "devServerTarget": "router-demo:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "hello-world:serve:production"
+              "devServerTarget": "router-demo:serve:production"
             }
           }
         }
       }
-    }
-  },
-  "defaultProject": "hello-world",
-  "cli": {
-    "analytics": "2b3601b7-967c-41c2-ba58-ea563432ac14"
-  }
+    }},
+  "defaultProject": "router-demo"
 }
