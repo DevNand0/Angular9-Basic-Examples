@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "router-demo"
+    }
+  },
+  "defaultProject": "router-demo",
+  "cli": {
+    "analytics": "11ee437d-51cb-42ca-8a3c-b1f0b7f8d75e"
+  }
 }
