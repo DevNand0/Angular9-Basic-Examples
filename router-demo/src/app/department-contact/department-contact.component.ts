@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 @Component({
   selector: 'app-department-contact',
   template: `
@@ -7,14 +6,10 @@ import { Component, OnInit } from '@angular/core';
       THIS IS CONTACT SECTION!
     </p>
   `,
-  styles: [
-  ]
+  styles: []
 })
 export class DepartmentContactComponent implements OnInit {
-
   constructor() { }
-
   ngOnInit(): void {
   }
-
 }
